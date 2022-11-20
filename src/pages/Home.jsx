@@ -20,7 +20,8 @@ const Home = () => {
             </IconButton>
         </Box>
        
-        <video src={BgVideo} autoPlay='autoplay' playsinline muted={true} loop={true}/>
+        {/* <video src={BgVideo} autoPlay='autoplay' playsinline muted={true} loop={true}/> */}
+        <video src={BgVideo} muted="muted" autoplay="autoplay" playsinline="playsinline" loop="loop" />
        
         <div className='overlay'></div>
         <Box sx={{position:'absolute',top:'0', width:'100%',height:'100%', display:'flex',flexDirection:'column', zIndex:'555', color:'#fff', alignItems:'center', justifyContent:'center'}}>
