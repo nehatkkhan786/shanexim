@@ -29,6 +29,24 @@ const SidebarDrawer = ({open, setOpen}) => {
                        <ListItemText>Home</ListItemText>
                    </ListItemButton>
                </ListItem>
+
+               <ListItem disablePadding sx={{':hover':{bgcolor:'green'}}}>
+                   <ListItemButton>
+                       <ListItemText>About</ListItemText>
+                   </ListItemButton>
+               </ListItem>
+
+               <ListItem disablePadding sx={{':hover':{bgcolor:'green'}}}>
+                   <ListItemButton>
+                       <ListItemText>Products</ListItemText>
+                   </ListItemButton>
+               </ListItem>
+
+               <ListItem disablePadding sx={{':hover':{bgcolor:'green'}}}>
+                   <ListItemButton>
+                       <ListItemText>Contact</ListItemText>
+                   </ListItemButton>
+               </ListItem>
             </List>
         </Box>
     </Box>
