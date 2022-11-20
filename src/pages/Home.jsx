@@ -1,5 +1,5 @@
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
-import BgVideo from '../assets/video2.mp4'
+import BgVideo from '../assets/video.mp4'
 import { Box, Button, IconButton, Typography } from '@mui/material';
 import { SocialIcon } from 'react-social-icons';
 import './home.css'
