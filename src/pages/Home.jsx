@@ -19,7 +19,7 @@ const Home = () => {
                 <MenuRoundedIcon sx={{color:'#fff'}}/>
             </IconButton>
         </Box>
-        <video src={BgVideo} autoPlay muted loop/>
+        <video src={BgVideo} autoPlay={true} muted={true} loop={true}/>
         <div className='overlay'></div>
         <Box sx={{position:'absolute',top:'0', width:'100%',height:'100%', display:'flex',flexDirection:'column', zIndex:'555', color:'#fff', alignItems:'center', justifyContent:'center'}}>
             <Typography sx={{ typography:{xs:'h4',md:'h3'}, textTransform:'uppercase', fontWeight:700,}}>WorldClass Seed </Typography>
