@@ -1,4 +1,5 @@
-import { Box, List, ListItem, ListItemButton, ListItemText, SwipeableDrawer } from '@mui/material'
+import { Box, IconButton, List, ListItem, ListItemButton, ListItemText, SwipeableDrawer } from '@mui/material'
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import React from 'react'
 
 const SidebarDrawer = ({open, setOpen}) => {
@@ -12,6 +13,9 @@ const SidebarDrawer = ({open, setOpen}) => {
           backgroundColor: "#2D5A27",
           color: "white",
           borderRadius: "100px 0px 0 100px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center"
         },
       }}
     anchor='right'
@@ -21,12 +25,17 @@ const SidebarDrawer = ({open, setOpen}) => {
     onClose={()=>setOpen(false)}
     onOpen = {()=>setOpen(true)}
     >
+         <Box sx={{position:'absolute', top:'20px', zIndex:'25',}}>
+              <IconButton onClick={()=>setOpen(false)}>
+                <CloseRoundedIcon sx={{color:'#fff'}}/>
+              </IconButton>
+            </Box>
     <Box sx={{width:{xs:250, md:300}, display:'flex', justifyContent:'center'}}>
-        <Box sx={{display:'flex', justifyContent:'center'}}>
+           
             <List>
-               <ListItem disablePadding sx={{':hover':{bgcolor:'green'}}}>
+               <ListItem disablePadding sx={{':hover':{backgroundColor:'green', letterSpacing:'5px'}}}>
                    <ListItemButton>
-                       <ListItemText>Home</ListItemText>
+                       <ListItemText primary='Home'/>
                    </ListItemButton>
                </ListItem>
 
@@ -48,7 +57,6 @@ const SidebarDrawer = ({open, setOpen}) => {
                    </ListItemButton>
                </ListItem>
             </List>
-        </Box>
     </Box>
 
     </SwipeableDrawer>
