@@ -21,9 +21,10 @@ const Home = () => {
         </Box>
        
         {/* <video src={BgVideo} autoPlay='autoplay' playsinline muted={true} loop={true}/> */}
+        <div className='overlay'></div>
         <video src={BgVideo} muted="muted" autoplay="autoplay" playsinline="playsinline" loop="loop" />
        
-        <div className='overlay'></div>
+        
         <Box sx={{position:'absolute',top:'0', width:'100%',height:'100%', display:'flex',flexDirection:'column', zIndex:'555', color:'#fff', alignItems:'center', justifyContent:'center'}}>
             <Typography sx={{ typography:{xs:'h4',md:'h3'}, textTransform:'uppercase', fontWeight:700,}}>WorldClass Seed </Typography>
             <Typography sx={{ typography:{xs:'h5',md:'h4'}, mt:1, textTransform:'uppercase', fontWeight:500 }}>From North-East India</Typography>
