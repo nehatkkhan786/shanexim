@@ -30,7 +30,15 @@ const Home = () => {
             <Typography sx={{ typography:{xs:'h5',md:'h4'}, mt:1, textTransform:'uppercase', fontWeight:500 }}>From North-East India</Typography>
             <Typography sx={{ypography:{xs:'title2',md:'title', textAlign:'center',}, mt:1}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </Typography>
             <Button  variant='contained'sx={{mt:2, color:'white', backgroundColor:'green', transition:'0.3s', ':hover':{letterSpacing:'10px', backgroundColor:'green'}}}>Explore</Button>
+            <Box sx={{mt:6, display:'flex', gap:2}}>
+
+               <SocialIcon className='social-icon' network="twitter" bgColor="green" />
+               <SocialIcon network="instagram" bgColor="green" />
+               <SocialIcon network="facebook" bgColor="green" />
+            </Box>
+            
         </Box>
+       
         <SidebarDrawer open={open} setOpen={setOpen}/>
     </Box>
   )

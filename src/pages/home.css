@@ -38,3 +38,11 @@ video{
     justify-content: center;
     color: #fff
 }
+.social-icon{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(0.5);
+}
+.social-icon:hover{
+    transform: scale(0.5) translateY(-15px);
+}
